@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6adb807f-b627-4fc1-a782-7e6365ec094a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/chat.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/components/ChatForm.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/components/ChatMessages.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Events/MessageSent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Events/MessageSent.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ChatsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ChatsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/chat.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/chat.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/channels.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/channels.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -151,7 +152,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1583218072774</updated>
-      <workItem from="1583218079086" duration="4996000" />
+      <workItem from="1583218079086" duration="6222000" />
     </task>
     <servers />
   </component>

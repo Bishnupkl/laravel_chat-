@@ -2,6 +2,8 @@
 
 namespace App\Events;
 
+use App\Message;
+use App\User;
 use Illuminate\Broadcasting\Channel;
 use Illuminate\Broadcasting\InteractsWithSockets;
 use Illuminate\Broadcasting\PresenceChannel;
@@ -13,24 +15,38 @@ use Illuminate\Queue\SerializesModels;
 class MessageSent
 {
     use Dispatchable, InteractsWithSockets, SerializesModels;
+    /**
+     * User that sent the message
+     *
+     * @var User
+     */
+    public $user;
+
+    /**
+     * Message details
+     *
+     * @var Message
+     */
+    public $message;
 
     /**
      * Create a new event instance.
      *
      * @return void
      */
-    public function __construct()
+    public function __construct(User $user, Message $message)
     {
-        //
+        $this->user = $user;
+        $this->message = $message;
     }
 
     /**
      * Get the channels the event should broadcast on.
      *
-     * @return \Illuminate\Broadcasting\Channel|array
+     * @return Channel|array
      */
     public function broadcastOn()
     {
-        return new PrivateChannel('channel-name');
+        return new PrivateChannel('chat');
     }
 }
